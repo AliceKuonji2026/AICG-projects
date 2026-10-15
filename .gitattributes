@@ -1,0 +1,28 @@
+# Normalize text files to LF in both the repository and working tree.
+* text=auto eol=lf
+
+# Text-based model assets.
+*.gltf text eol=lf
+*.obj text eol=lf
+*.mtl text eol=lf
+
+# Treat common binary assets as binary.
+*.bmp binary
+*.dds binary
+*.gif binary
+*.ico binary
+*.jpeg binary
+*.jpg binary
+*.hdr binary
+*.ktx binary
+*.ktx2 binary
+*.png binary
+*.tga binary
+*.webp binary
+*.glb binary
+*.bin binary
+*.spv binary
+*.ttf binary
+*.otf binary
+*.woff binary
+*.woff2 binary
