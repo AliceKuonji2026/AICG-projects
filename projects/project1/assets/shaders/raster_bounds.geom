@@ -43,6 +43,7 @@ int clipAgainst(inout ClipVertex polygon[9], int count, vec4 plane) {
     // Hint: visit every edge, including the edge from the last vertex to the first;
     // emit a crossing vertex when the endpoints are on opposite sides.
     /*************************************** TODO BEGIN ******************************************/
+    return 0;
     /**************************************** TODO END *******************************************/
 }
 

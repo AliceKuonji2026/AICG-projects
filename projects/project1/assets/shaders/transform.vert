@@ -17,5 +17,10 @@ out vec2 tfUv;
 void main() {
     // TODO: apply mvp transformation for each vertices
     /*************************************** TODO BEGIN ******************************************/
+    tfClip = vec4(0.0, 0.0, 0.0, 1.0);
+    tfWorldPosition = vec3(0.0);
+    tfNormal = vec3(0.0, 0.0, 1.0);
+    tfUv = vec2(0.0);
+    gl_Position = tfClip;
     /**************************************** TODO END *******************************************/
 }

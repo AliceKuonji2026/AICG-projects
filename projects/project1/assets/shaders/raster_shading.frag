@@ -133,6 +133,11 @@ void main() {
     // Hint: Derive tangent and bitangent from world-position and UV edges;
     //       keep the fallback axes when the UVs are degenerate.
     /*************************************** TODO BEGIN ******************************************/
+    vec3 worldPosition = vec3(0.0);
+    vec3 normal = vec3(0.0, 0.0, 1.0);
+    vec3 tangent = vec3(1.0, 0.0, 0.0);
+    vec3 bitangent = vec3(0.0, 1.0, 0.0);
+    vec2 uv = vec2(0.0);
     /**************************************** TODO END *******************************************/
 
     outColor = vec4(pbrShade(worldPosition, normal, tangent, bitangent, uv), 1.0);
