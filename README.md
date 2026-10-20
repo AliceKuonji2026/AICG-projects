@@ -19,8 +19,8 @@ The AI for Graphics projects will introduce:
 ## Get the repository
 
 ```sh
-git clone https://github.com/syby119/AICG-projects.git
-cd AICG-projects
+git clone https://github.com/syby119/AICG-projects-answer.git
+cd AICG-projects-answer
 ```
 
 ## How to run
@@ -36,15 +36,17 @@ For the existing C++ projects, you need:
 
 ### Build and run
 
-Project 1 has its own `CMakeLists.txt` and dependency manifest; there is no repository-wide CMake build. Follow the [Project 1 setup guide](projects/project1/README.md) for platform-specific commands and runtime asset setup. Complete the marked TODO sections to finish the renderer. Project 2 will be added later.
+Projects 1 and 2 have separate `CMakeLists.txt` files and dependency manifests. Configure and build each from its own directory; there is no repository-wide CMake build. Follow the [Project 1 setup guide](projects/project1/README.md) for platform-specific commands and runtime asset setup. Project 2 uses the same CMake and vcpkg workflow from `projects/project2` and builds the `ray_tracer` target.
+
+In Project 2, use the Control Panel's renderer selector to switch between GPU and CPU ray tracing. Both renderers use the window's pixel dimensions; the CPU renderer progressively samples the full-resolution image.
 
 The setup instructions for Projects 3–6 will be added with those assignments.
 
 ## Projects
 
-| [Project 1: Software rendering](projects/project1/) | Project 2: Ray tracing |
+| [Project 1: Software rendering](projects/project1/) | [Project 2: Ray tracing](projects/project2/) |
 | --- | --- |
-| <img src="screenshots/project1.png" alt="Project 1 reference screenshot" width="480"> | To be added |
+| <img src="screenshots/project1.png" alt="Project 1 runtime screenshot" width="480"> | <img src="screenshots/project2.png" alt="Project 2 runtime screenshot" width="480"> |
 | Project 3 | Project 4 |
 | To be added | To be added |
 | Project 5 | Project 6 |
